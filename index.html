@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinos La Cumbre</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- =============== VERIFICACIÓN DE EDAD (MODAL) =============== -->
+  <div id="ageGate" class="age-overlay">
+    <div class="modal">
+      <div class="icon">
+        <img src="./imagenes/logo.png" alt="logo">
+      </div>
+      <h1>Verificación de Edad</h1>
+      <p>
+        Para acceder a este sitio, debes confirmar que eres mayor de 18 años.
+        El consumo de alcohol está prohibido para menores de edad.
+      </p>
+      <div class="btn-container">
+        <button class="btn-yes" id="mayor">Soy mayor de 18</button>
+        <button class="btn-no" id="menor">Soy menor de 18</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =============== CONTENIDO REAL DEL SITIO =============== -->
+  <div id="siteContent" class="site-content">
+
+    <!-- HEADER / HERO -->
+    <header class="hero">
+      <nav class="navbar">
+        <!-- LOGO Y NOMBRE -->
+        <div class="navbar-left">
+          <span class="logo-encabezado">
+            <img src="./imagenes/logo.png" alt="Logo Vinos La Cumbre">
+          </span>
+          <a class="brand-name" href="#top">Vinos La Cumbre</a>
+        </div>
+
+        <!-- MENÚ Y BOTÓN CONTACTO -->
+        <div class="navbar-right">
+          <ul class="navbar-menu">
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#valle">El Valle</a></li>
+          </ul>
+          <a href="#contacto" class="btn btn-gold small">Contacto</a>
+        </div>
+      </nav>
+
+      <div class="hero-content" id="top">
+        <h1 class="hero-title">Más de 20 años cultivando tradición y sabor</h1>
+        <p class="hero-subtitle">
+          Autenticidad y tradición que se degustan en cada sorbo
+        </p>
+
+        <div class="hero-cta">
+          <a href="#productos" class="btn btn-gold">
+            Descubre Nuestros Productos
+          </a>
+
+          <a href="#historia" class="btn btn-black">
+            Descubre Nuestra Historia
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- =============== SECCIÓN PRODUCTOS / VINOS =============== -->
+    <section class="section light-bg" id="productos">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Nuestros Vinos</h2>
+          <p class="section-desc">
+            Cada vino de Vinos La Cumbre refleja más de dos décadas de dedicación, 
+            equilibrio y amor por la auténtica tradición peruana.
+          </p>
+        </header>
+
+        <div class="cards-grid">
+
+          <!-- Card 1 - Vino Abocado -->
+          <article class="product-card">
+            <div class="product-card-img img-vino">
+              <img src="./imagenes/Abocado Quebranta.png" alt="Vino Abocado" />
+              <span class="badge">Vino</span>
+            </div>
+
+            <div class="product-card-body">
+              <h3 class="product-title">Vino Abocado</h3>
+              <p class="product-meta">Uva Quebranta</p>
+              <p class="product-desc">
+                Un vino de cuerpo ligero y dulzor natural, perfecto 
+                para quienes disfrutan de notas afrutadas y un final sedoso.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 2 - Vino Semiseco -->
+          <article class="product-card">
+            <div class="product-card-img img-vino">
+              <img src="./imagenes/Semiseco Quebranta.png" alt="Vino Semiseco" />
+              <span class="badge">Vino</span>
+            </div>
+
+            <div class="product-card-body">
+              <h3 class="product-title">Vino Semiseco</h3>
+              <p class="product-meta">Uva Quebranta</p>
+              <p class="product-desc">
+                Equilibrio ideal entre dulzura y acidez; un vino 
+                que realza los aromas frutales y deja un final armonioso en boca.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 3 - Vino Seco -->
+          <article class="product-card">
+            <div class="product-card-img img-vino">
+              <img src="./imagenes/Seco Quebranta.png" alt="Vino Seco" />
+              <span class="badge">Vino</span>
+            </div>
+
+            <div class="product-card-body">
+              <h3 class="product-title">Vino Seco</h3>
+              <p class="product-meta">Uva Quebranta</p>
+              <p class="product-desc">
+                Vino de carácter firme y elegante, con notas sutiles que revelan la autenticidad del proceso artesanal.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 4 - Vino Borgoña -->
+          <article class="product-card">
+            <div class="product-card-img img-vino">
+              <img src="./imagenes/Borgoña.png" alt="Vino Borgoña" />
+              <span class="badge">Vino</span>
+            </div>
+
+            <div class="product-card-body">
+              <h3 class="product-title">Vino Borgoña</h3>
+              <p class="product-meta">Uva Borgoña</p>
+              <p class="product-desc">
+                Aromático y expresivo, combina notas de frutos rojos maduros con un paladar suave y persistente.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 5 - Vino Borgoña Blanca -->
+          <article class="product-card">
+            <div class="product-card-img img-vino">
+              <img src="./imagenes/Borgoña Blanca.png" alt="Vino Borgoña Blanca" />
+              <span class="badge">Vino</span>
+            </div>
+
+            <div class="product-card-body">
+              <h3 class="product-title">Vino Borgoña Blanca</h3>
+              <p class="product-meta">Uva Borgoña</p>
+              <p class="product-desc">
+                Refrescante y delicado, con matices florales y frutales que evocan la frescura de nuestras cosechas.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 6 - Vino Semiseco Italia -->
+          <article class="product-card">
+            <div class="product-card-img img-vino">
+              <img src="./imagenes/Semiseco Italia.png" alt="Vino Semiseco Italia" />
+              <span class="badge">Vino</span>
+            </div>
+
+            <div class="product-card-body">
+              <h3 class="product-title">Vino Semiseco Italia</h3>
+              <p class="product-meta">Uva Italia</p>
+              <p class="product-desc">
+                Vino blanco de gran equilibrio, con aromas a frutas tropicales y un final amable que invita a seguir degustando.
+              </p>
+            </div>
+          </article>
+
+        </div><!-- /cards-grid -->
+      </div><!-- /container -->
+    </section>
+
+    <!-- =============== SECCIÓN PISCOS =============== -->
+    <section class="section light-bg" id="piscos">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Nuestros Piscos</h2>
+          <p class="section-desc">
+            Destilado de mosto parcialmente fermentado que conserva la esencia pura de la uva; elegante, aromático y sofisticado.
+          </p>
+        </header>
+
+        <div class="cards-grid piscos-grid">
+
+          <!-- Card 1 - Pisco Mosto Verde Quebranta -->
+          <article class="product-card">
+            <div class="product-card-img img-vino">
+              <img src="./imagenes/Pisco Mosto Verde Quebranta.png" alt="Pisco Mosto Verde Quebranta" />
+              <span class="badge">Pisco</span>
+            </div>
+
+            <div class="product-card-body">
+              <h3 class="product-title">Pisco Mosto Verde Quebranta</h3>
+              <p class="product-meta">Uva Quebranta</p>
+              <p class="product-desc">
+                Destilado de mosto parcialmente fermentado que conserva la esencia pura de la uva; elegante, aromático y sofisticado.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 2 - Pisco Puro Quebranta -->
+          <article class="product-card">
+            <div class="product-card-img img-vino">
+              <img src="./imagenes/Pisco Puro Quebranta.png" alt="Pisco Puro Quebranta" />
+              <span class="badge">Pisco</span>
+            </div>
+
+            <div class="product-card-body">
+              <h3 class="product-title">Pisco Puro Quebranta</h3>
+              <p class="product-meta">Uva Quebranta</p>
+              <p class="product-desc">
+                Pisco de cuerpo limpio y aromas intensos, resultado de una destilación precisa que resalta la nobleza de la uva quebranta.
+              </p>
+            </div>
+          </article>
+
+        </div><!-- /cards-grid piscos-grid -->
+      </div><!-- /container -->
+    </section>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/51928309538" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
+      <img src="./imagenes/whatsapp.png" alt="logo WhatsApp" />
+    </a>
+
+    <!-- =============== HISTORIA =============== -->
+    <section class="section historia-section" id="historia">
+      <div class="container historia-wrapper">
+        <header class="section-header historia-header">
+          <h2 class="section-title light">Nuestra Historia</h2>
+          <p class="section-desc light">
+            Desde su fundación en 2001, Vinos La Cumbre ha mantenido viva la tradición artesanal del vino y el pisco peruano. Nacida del compromiso con la calidad y el respeto por el legado familiar, la marca representa más de dos décadas de dedicación a la excelencia.
+          </p>
+        </header>
+
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="metric-value">20+</div>
+            <div class="metric-label">Años de Tradición</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="metric-value">15+</div>
+            <div class="metric-label">Premios Ganados</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon"><i class="fa-solid fa-wine-bottle"></i></div>
+            <div class="metric-value">100K+</div>
+            <div class="metric-label">Botellas Producidas</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon"><i class="fa-solid fa-people-group"></i></div>
+            <div class="metric-value">5K+</div>
+            <div class="metric-label">Clientes Satisfechos</div>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2001</div>
+            <div class="timeline-content">
+              <h4>Los Inicios</h4>
+              <p>Nace Vinos La Cumbre, con la visión de preservar la tradición artesanal del vino y el pisco peruano, elaborando productos con identidad y pasión familiar.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2008</div>
+            <div class="timeline-content">
+              <h4>Primeros Reconocimientos</h4>
+              <p>
+                Nuestros vinos quebranta alcanzan los primeros premios en concursos regionales, marcando el inicio de una trayectoria distinguida por la calidad.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2013</div>
+            <div class="timeline-content">
+              <h4>Consolidación</h4>
+              <p>
+                Vinos La Cumbre obtiene los primeros lugares en el I Concurso Regional de Cata de Vino y Pisco – Sayán, reafirmando su liderazgo en la producción artesanal.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2017</div>
+            <div class="timeline-content">
+              <h4>Expansión y Nuevas Variedades</h4>
+              <p>
+                Se incorporan vinos elaborados con uvas Borgoña e Italia, ampliando nuestra línea de productos y modernizando procesos sin perder la esencia artesanal.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-content">
+              <h4>Presente y Futuro</h4>
+              <p>
+                Con más de dos décadas de historia, Vinos La Cumbre continúa honrando su legado familiar, impulsando la innovación y llevando la tradición peruana a nuevas generaciones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== EL VALLE =============== -->
+    <section class="section valle-section" id="valle">
+      <div class="container valle-wrapper">
+        
+        <!-- TARJETA MAPA -->
+        <div class="valle-img">
+          <iframe
+            class="map-frame"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.472438296345!2d-77.206!3d-11.153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9106f98ddc3c8c69%3A0x2b6c1d13a16c3baf!2sSay%C3%A1n%2C%20Lima%2C%20Per%C3%BA!5e0!3m2!1ses!2spe!4v0000000000000"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+
+          <span class="valle-location">📍 Sayan, Lima, Perú</span>
+        </div>
+
+        <!-- TEXTO DERECHA -->
+        <div class="valle-info">
+          <h2 class="section-title light">El Valle de Sayan</h2>
+          <p class="valle-desc">
+            Cuna de nuestra inspiración, el valle donde nace Vinos La Cumbre ofrece un entorno privilegiado para el cultivo de la vid. Su clima templado, suelos fértiles y brisa constante crean las condiciones ideales para que nuestras uvas desarrollen carácter, aroma y equilibrio.
+            <br> Aquí, la naturaleza y la tradición se encuentran para dar vida a vinos y piscos que reflejan la esencia del Perú y el legado artesanal que nos define.
+          </p>
+
+          <ul class="valle-benefits">
+            <li class="benefit-item">
+              <div class="benefit-icon">
+                <i class="fa-solid fa-sun"></i>
+              </div>
+              <div>
+                <div class="benefit-title">Clima Ideal</div>
+                <div class="benefit-text">
+                  Temperaturas perfectas y abundante sol durante todo el año
+                </div>
+              </div>
+            </li>
+
+            <li class="benefit-item">
+              <div class="benefit-icon">
+                <i class="fa-solid fa-seedling"></i>
+              </div>
+              <div>
+                <div class="benefit-title">Terroir Único</div>
+                <div class="benefit-text">
+                  Suelos ricos y agua pura de los Andes
+                </div>
+              </div>
+            </li>
+
+            <li class="benefit-item">
+              <div class="benefit-icon">
+                <i class="fa-solid fa-mountain"></i>
+              </div>
+              <div>
+                <div class="benefit-title">Altitud Perfecta</div>
+                <div class="benefit-text">
+                  Ubicación privilegiada en las estribaciones andinas
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== PROCESO =============== -->
+    <section class="section light-bg proceso-section" id="proceso">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Proceso Artesanal</h2>
+          <p class="section-desc">
+            Cada etapa de nuestro proceso combina tradición, técnica y respeto por la tierra, dando origen a vinos y piscos que reflejan el carácter auténtico de Vinos La Cumbre.
+          </p>
+        </header>
+
+        <div class="proceso-grid">
+          <div class="proceso-card">
+            <div class="step-badge">1</div>
+            <h3 class="proceso-title">Cosecha Selectiva</h3>
+            <p class="proceso-text">
+              Seleccionamos manualmente los mejores racimos en su punto óptimo de madurez, garantizando frescura y calidad desde el origen.
+            </p>
+          </div>
+
+          <div class="proceso-card">
+            <div class="step-badge">2</div>
+            <h3 class="proceso-title">Fermentación Artesanal</h3>
+            <p class="proceso-text">
+              Aplicamos métodos artesanales que respetan los tiempos de la uva, permitiendo que sus aromas y sabores se desarrollen de manera equilibrada y auténtica.
+            </p>
+          </div>
+
+          <div class="proceso-card">
+            <div class="step-badge">3</div>
+            <h3 class="proceso-title">Maduración</h3>
+            <p class="proceso-text">
+              Nuestros vinos descansan en condiciones controladas, logrando una textura suave, aromas complejos y un carácter único que distingue a Vinos La Cumbre.
+            </p>
+          </div>
+
+          <div class="proceso-card">
+            <div class="step-badge">4</div>
+            <h3 class="proceso-title">Embotellado</h3>
+            <p class="proceso-text">
+              Cada botella es preparada con precisión y dedicación, asegurando que el resultado final conserve la esencia artesanal y la excelencia que nos define.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== CONTACTO =============== -->
+    <section class="section contacto-section" id="contacto">
+      <div class="container contacto-wrapper">
+        <header class="section-header">
+          <h2 class="section-title">Contáctanos</h2>
+          <p class="section-desc">
+            ¿Tienes alguna pregunta? Estamos aquí para ayudarte
+          </p>
+        </header>
+
+        <!-- FORMULARIO ACTUALIZADO -->
+        <form 
+          id="contactForm"
+          class="contact-form"
+          action="https://formsubmit.co/victorivan21@gmail.com"
+          method="POST"
+          accept-charset="UTF-8"
+          enctype="application/x-www-form-urlencoded"
+        >
+          <!-- Nombre -->
+          <input 
+            type="text" 
+            class="input" 
+            name="name"
+            placeholder="Nombre completo" 
+            required
+          />
+
+          <!-- Correo -->
+          <input 
+            type="email" 
+            class="input" 
+            name="email"
+            placeholder="Correo electrónico" 
+            required
+          />
+
+          <!-- Teléfono -->
+          <input 
+            type="tel" 
+            class="input" 
+            name="phone"
+            placeholder="Teléfono" 
+          />
+
+          <!-- Mensaje -->
+          <textarea 
+            class="input textarea" 
+            name="message"
+            rows="4" 
+            placeholder="Tu mensaje"
+            required
+          ></textarea>
+
+          <!-- CONFIG OCULTA -->
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde la web Vinos La Cumbre">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="gracias.html">
+
+          <!-- Botón -->
+          <button type="submit" class="btn btn-gold full">
+            Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- =============== FOOTER =============== -->
+    <footer class="site-footer">
+      <div class="container footer-top">
+
+        <div class="footer-col">
+          <div class="footer-brand">
+            <span class="brand-icon gold">
+              <img src="./imagenes/logo.png" alt="logo">
+            </span>
+            <span class="brand-name">Vinos La Cumbre</span>
+          </div>
+          <p class="footer-text">
+            Tradición peruana en vinos y piscos artesanales desde 2001.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Enlaces</h4>
+          <ul class="footer-list">
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#valle">El Valle</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Contacto</h4>
+          <ul class="footer-list">
+            <li>+51 999 999 999</li>
+            <li>info@vinoslacumbre.com</li>
+            <li>Sayan, Lima, Perú</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Newsletter</h4>
+          <p class="footer-text">
+            Recibe nuestras novedades y ofertas especiales
+          </p>
+
+          <form 
+            id="newsletterForm"
+            class="newsletter"
+            action="https://formsubmit.co/victorivan21@gmail.com"
+            method="POST"
+            accept-charset="UTF-8"
+            enctype="application/x-www-form-urlencoded"
+          >
+            <input 
+              class="newsletter-input" 
+              type="email" 
+              name="subscriber_email"
+              placeholder="Tu email"
+              required
+            />
+
+            <input type="hidden" name="_subject" value="Nuevo suscriptor Newsletter - Vinos La Cumbre">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="gracias-newsletter.html">
+
+            <button type="submit" class="newsletter-btn">📩</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <p class="footer-copy">
+            © 2025 Vinos La Cumbre. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /siteContent -->
+
+  <!-- =============== JS VERIFICACIÓN DE EDAD =============== -->
+  <script>
+    const ageGate = document.getElementById('ageGate');
+    const siteContent = document.getElementById('siteContent');
+    const btnMayor = document.getElementById('mayor');
+    const btnMenor = document.getElementById('menor');
+
+    function mostrarSitio() {
+      ageGate.style.display = 'none';
+      siteContent.style.display = 'block';
+    }
+
+    // click "Soy mayor"
+    btnMayor.addEventListener('click', () => {
+      mostrarSitio();
+    });
+
+    // click "Soy menor"
+    btnMenor.addEventListener('click', () => {
+      alert('Lo sentimos, este sitio es solo para mayores de edad.');
+      window.location.href = 'https://www.google.com';
+    });
+  </script>
+
+  <!-- =============== JS ENVÍO FORZADO POST CONTACTO =============== -->
+  <script>
+    (function () {
+      const form = document.getElementById('contactForm');
+
+      if (!form) return;
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault(); // evita el envío normal (que estaba generando GET)
+
+        const action = form.getAttribute('action');
+        const formData = new FormData(form);
+        const body = new URLSearchParams(formData).toString();
+
+        try {
+          const res = await fetch(action, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body
+          });
+
+          if (res.ok) {
+            // Redirige a la página de gracias del formulario de contacto
+            window.location.href = 'gracias.html';
+          } else {
+            alert('Hubo un problema al enviar el mensaje. Intenta de nuevo.');
+          }
+        } catch (err) {
+          alert('No se pudo conectar con el servidor. Intenta más tarde.');
+        }
+      });
+    })();
+  </script>
+
+  <!-- =============== JS ENVÍO FORZADO POST NEWSLETTER =============== -->
+  <script>
+    (function () {
+      const newsForm = document.getElementById('newsletterForm');
+
+      if (!newsForm) return;
+
+      newsForm.addEventListener('submit', async function (e) {
+        e.preventDefault(); // evitamos el submit normal para que no haga GET
+
+        const action = newsForm.getAttribute('action');
+        const formData = new FormData(newsForm);
+        const body = new URLSearchParams(formData).toString();
+
+        try {
+          const res = await fetch(action, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body
+          });
+
+          if (res.ok) {
+            // Redirige a la página de gracias del newsletter
+            window.location.href = 'gracias-newsletter.html';
+          } else {
+            alert('Hubo un problema al suscribirte. Intenta otra vez.');
+          }
+        } catch (err) {
+          alert('No se pudo conectar con el servidor. Intenta más tarde.');
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
