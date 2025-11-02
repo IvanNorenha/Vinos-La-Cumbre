@@ -362,13 +362,18 @@ body {
   position: relative;
 }
 
+/* TARJETA INDIVIDUAL */
 .product-card {
-  background-color: var(--crema-bg);
+  background-color: #fff; /* antes var(--crema-bg); ahora toda la card es blanca */
   border-radius: var(--radius-big);
   border: 1px solid var(--gris-borde);
   overflow: hidden;
+
+  /* igualamos alturas entre hermanas en la misma fila */
   display: flex;
   flex-direction: column;
+  height: 100%;
+
   box-shadow: 0 8px 20px rgba(0,0,0,.05);
   transition: transform .25s ease, box-shadow .25s ease;
   will-change: transform, box-shadow;
@@ -445,10 +450,17 @@ body {
   color: #000;
 }
 
+/* cuerpo de la tarjeta */
 .product-card-body {
   background-color: #fff;
   padding: 1.5rem 1.25rem 2rem;
   border-top: 0;
+
+  /* ESTO es lo importante para forzar que el cuerpo
+     llene verticalmente y el fondo blanco nunca se "corte" */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .product-title {
@@ -1303,4 +1315,3 @@ body {
     font-size: .8rem;
   }
 }
-
