@@ -511,82 +511,99 @@
       </div>
     </section>
 
-    <!-- =============== FOOTER =============== -->
-    <footer class="site-footer">
-      <div class="container footer-top">
+        <!-- =============== FOOTER =============== -->
+        <footer class="site-footer">
+        <div class="container footer-top">
 
-        <div class="footer-col">
-          <div class="footer-brand">
-            <span class="brand-icon gold">
-              <img src="./imagenes/logo.png" alt="logo">
-            </span>
-            <span class="brand-name">Vinos La Cumbre</span>
-          </div>
-          <p class="footer-text">
-            Tradición peruana en vinos y piscos artesanales desde 2001.
-          </p>
+            <!-- Columna 1: Marca -->
+            <div class="footer-col">
+            <div class="footer-brand">
+                <span class="brand-icon gold">
+                <img src="./imagenes/logo.png" alt="logo">
+                </span>
+                <span class="brand-name">Vinos La Cumbre</span>
+            </div>
+            <p class="footer-text">
+                Tradición peruana en vinos y piscos artesanales desde 2001.
+            </p>
+            </div>
+
+            <!-- Columna 2: Enlaces -->
+            <div class="footer-col">
+            <h4 class="footer-title">Enlaces</h4>
+            <ul class="footer-list">
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#valle">El Valle</a></li>
+            </ul>
+            </div>
+
+            <!-- Columna 3: Contacto -->
+            <div class="footer-col">
+            <h4 class="footer-title">Contacto</h4>
+            <ul class="footer-list">
+                <li>+51 999 999 999</li>
+                <li>info@vinoslacumbre.com</li>
+                <li>Sayan, Lima, Perú</li>
+            </ul>
+            </div>
+
+            <!-- Columna 4: Newsletter -->
+            <div class="footer-col">
+            <h4 class="footer-title">Newsletter</h4>
+            <p class="footer-text">
+                Recibe nuestras novedades y ofertas especiales
+            </p>
+
+            <form 
+                id="newsletterForm"
+                class="newsletter"
+                action="https://formsubmit.co/victorivan21@gmail.com"
+                method="POST"
+                accept-charset="UTF-8"
+                enctype="application/x-www-form-urlencoded"
+            >
+                <input 
+                class="newsletter-input" 
+                type="email" 
+                name="subscriber_email"
+                placeholder="Tu email"
+                required
+                />
+
+                <input type="hidden" name="_subject" value="Nuevo suscriptor Newsletter - Vinos La Cumbre">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="gracias-newsletter.html">
+
+                <button type="submit" class="newsletter-btn">📩</button>
+            </form>
+            </div>
+
+            <!-- Columna 5: Libro de Reclamaciones -->
+            <div class="footer-col footer-libro">
+            <a href="libro-reclamaciones.html" class="libro-link" title="Libro de Reclamaciones">
+                <img 
+                src="./imagenes/libro reclamaciones.png" 
+                alt="Libro de Reclamaciones" 
+                class="libro-img"
+                />
+            </a>
+            <p class="footer-libro-text">
+                Libro de Reclamaciones Virtual
+            </p>
+            </div>
+
         </div>
 
-        <div class="footer-col">
-          <h4 class="footer-title">Enlaces</h4>
-          <ul class="footer-list">
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#historia">Historia</a></li>
-            <li><a href="#valle">El Valle</a></li>
-          </ul>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+            <p class="footer-copy">
+                © 2025 Vinos La Cumbre. Todos los derechos reservados.
+            </p>
+            </div>
         </div>
-
-        <div class="footer-col">
-          <h4 class="footer-title">Contacto</h4>
-          <ul class="footer-list">
-            <li>+51 999 999 999</li>
-            <li>info@vinoslacumbre.com</li>
-            <li>Sayan, Lima, Perú</li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4 class="footer-title">Newsletter</h4>
-          <p class="footer-text">
-            Recibe nuestras novedades y ofertas especiales
-          </p>
-
-          <form 
-            id="newsletterForm"
-            class="newsletter"
-            action="https://formsubmit.co/victorivan21@gmail.com"
-            method="POST"
-            accept-charset="UTF-8"
-            enctype="application/x-www-form-urlencoded"
-          >
-            <input 
-              class="newsletter-input" 
-              type="email" 
-              name="subscriber_email"
-              placeholder="Tu email"
-              required
-            />
-
-            <input type="hidden" name="_subject" value="Nuevo suscriptor Newsletter - Vinos La Cumbre">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next" value="gracias-newsletter.html">
-
-            <button type="submit" class="newsletter-btn">📩</button>
-          </form>
-        </div>
-
-      </div>
-
-      <div class="footer-bottom">
-        <div class="container footer-bottom-inner">
-          <p class="footer-copy">
-            © 2025 Vinos La Cumbre. Todos los derechos reservados.
-          </p>
-        </div>
-      </div>
-    </footer>
-
+        </footer>
   </div><!-- /siteContent -->
 
   <!-- =============== JS VERIFICACIÓN DE EDAD =============== -->

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>¡Suscripción confirmada! | Vinos La Cumbre</title>
+  <title>Registro Recibido | Vinos La Cumbre</title>
 
   <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -15,8 +15,6 @@
       --crema-bg: #efeddd;
       --dorado: #c99b2b;
       --dorado-dark: #b58825;
-
-      /* altura aprox. del footer para el cálculo del centrado */
       --footer-altura: 50px;
     }
 
@@ -27,27 +25,23 @@
       background-color: var(--crema-bg);
       color: var(--texto-vino);
       text-align: center;
-
-      /* ya NO necesitamos flex en body */
-      background-color: var(--crema-bg);
     }
 
-    /* Contenido principal centrado verticalmente */
+    /* Contenedor principal centrado sin scroll extra */
     .main {
       max-width: 800px;
       width: 100%;
       margin: 0 auto;
       padding: 2rem 1rem;
-
-      /* magia del centrado vertical */
       min-height: calc(100vh - var(--footer-altura));
+      box-sizing: border-box;
+
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center; /* <-- esto lo pone al medio vertical */
-      box-sizing: border-box;
-      color: var(--texto-vino);
+      justify-content: center;
       text-align: center;
+      color: var(--texto-vino);
     }
 
     /* Logo */
@@ -60,24 +54,44 @@
     /* Título */
     h1 {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(2rem, 1vw + 1.5rem, 2.5rem);
-      font-weight: 600;
+      font-size: clamp(1.8rem, 1vw + 1.2rem, 2.2rem);
+      line-height: 1.2;
+      font-weight: 700;
       color: var(--texto-vino);
       margin: 0 0 1rem 0;
-      line-height: 1.2;
     }
 
     /* Texto principal */
     .intro {
-      font-size: 1.05rem;
-      line-height: 1.6;
+      font-size: 1rem;
+      max-width: 600px;
+      line-height: 1.5;
       color: #4a3c3c;
-      margin: 0 0 1rem 0;
-      max-width: 700px;
+      margin: 0 0 1.5rem 0;
     }
 
-    .intro strong {
-      color: var(--texto-vino);
+    /* Caja informativa / aviso obligatorio */
+    .note-box {
+      background-color: #fff9e8;
+      border: 1px solid #e2d3a8;
+      border-radius: 8px;
+      padding: 1rem .9rem;
+      font-size: .9rem;
+      line-height: 1.4;
+      color: #4a3c3c;
+      text-align: left;
+      max-width: 600px;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0 0 1.5rem 0;
+    }
+
+    .note-box p {
+      margin: 0;
+    }
+
+    .note-box p + p {
+      margin-top: .6rem;
     }
 
     /* Botón */
@@ -92,14 +106,13 @@
       font-family: 'Raleway', sans-serif;
       display: inline-block;
       transition: background 0.3s;
-      margin-top: 1.5rem;
     }
 
     .btn:hover {
       background-color: var(--dorado-dark);
     }
 
-    /* Aviso de privacidad */
+    /* Aviso de privacidad / protección de datos */
     .privacidad {
       max-width: 700px;
       font-size: .8rem;
@@ -107,6 +120,7 @@
       color: #6a5a5a;
       font-weight: 500;
       margin: 1.5rem auto 0 auto;
+      text-align: center;
     }
 
     .privacidad a {
@@ -114,7 +128,7 @@
       text-decoration: underline;
     }
 
-    /* Footer fijo al final del flujo */
+    /* Footer */
     footer {
       background-color: var(--vino-bg);
       color: #fff;
@@ -123,8 +137,6 @@
       font-family: 'Raleway', sans-serif;
       padding: .8rem 1rem;
       line-height: 1.4;
-
-      /* aseguramos aprox misma altura declarada arriba */
       min-height: var(--footer-altura);
       box-sizing: border-box;
     }
@@ -139,23 +151,33 @@
   <main class="main">
     <img src="./imagenes/logo.png" alt="Logo Vinos La Cumbre" class="logo" />
 
-    <h1>¡Suscripción confirmada!</h1>
+    <h1>¡Registro recibido!</h1>
 
     <p class="intro">
-      Gracias por unirte a nuestro boletín.
+      Tu reclamo / queja ha sido enviado correctamente al Libro de Reclamaciones.
+      Nuestro equipo lo revisará y te dará respuesta en un plazo máximo de quince (15)
+      días hábiles.
     </p>
 
-    <p class="intro">
-      A partir de ahora recibirás en tu correo
-      <strong>novedades, ediciones limitadas y ofertas exclusivas</strong>
-      de <strong>Vinos La Cumbre</strong>.
-    </p>
+    <div class="note-box">
+      <p>
+        Recuerda que presentar este reclamo no impide que utilices otras vías de
+        solución de controversias ni limita tu derecho a acudir a Indecopi.
+      </p>
+      <p>
+        En un plazo máximo de 48 horas hábiles enviaremos a tu correo electrónico
+        registrado una copia del reclamo presentado como constancia.
+      </p>
+      <p>
+        También puedes guardar o imprimir esta página.
+      </p>
+    </div>
 
     <a href="index.html" class="btn">Volver al Inicio</a>
 
     <p class="privacidad">
-      Tus datos serán tratados de forma confidencial por
-      <strong>Vinos La Cumbre</strong> conforme a la
+      Tus datos personales serán tratados de forma confidencial por
+      <strong>Vinos La Cumbre</strong>, conforme a la
       <strong>Ley N.° 29733 de Protección de Datos Personales</strong>.
       Puedes solicitar su eliminación o actualización en cualquier momento
       escribiendo a
