@@ -1248,3 +1248,59 @@ body {
     height: 40px;
   }
 }
+
+/* ===== Columna Libro de Reclamaciones (footer) ===== */
+.footer-claim {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* en desktop se ve como otra columna más */
+}
+
+.claim-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+  color: #fff;
+  font-family: var(--font-body);
+  gap: .5rem;
+  max-width: 180px;
+}
+
+.claim-badge img {
+  max-width: 120px;        /* <-- controla el ancho máximo del ícono */
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter: brightness(0) invert(1); 
+  /* si tu PNG es negro y quieres que se vea blanco sobre el fondo vino.
+     Si ya hiciste el PNG en dorado/blanco, puedes BORRAR esta línea */
+}
+
+.claim-text {
+  font-size: .8rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-title);
+}
+
+/* En pantallas chicas: que esa columna no rompa la grilla */
+@media (max-width:600px){
+  .footer-claim {
+    align-items: center;
+  }
+
+  .claim-badge {
+    align-items: center;
+    text-align: center;
+  }
+
+  .claim-text {
+    font-size: .8rem;
+  }
+}
+
